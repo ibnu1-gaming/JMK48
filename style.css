@@ -1,0 +1,498 @@
+*, 
+html{
+	margin: 0;
+	padding: 0;
+}
+.gambar{
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+	animation: gambar 1s ease-in;
+	margin: 30px;
+}
+
+@keyframes gambar{
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	  }
+	  100% {
+		transform: translateY(0);
+		opacity: 1;
+	  }
+}
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: royalblue;
+	
+}
+.li{
+    list-style-type: none;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.ul{
+    display: flex;
+    animation: slider 1s ease-in;
+	
+}
+.youtube{
+    margin-top: 10px;
+    margin-left: 10px;  
+}
+.youtube:hover{
+	transform: scale(1.1); /* Membesarkan ikon */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+	border-radius: 20px;
+}
+.youtube:active{
+	transform: scale(0.9); /* Mengecilkan ikon saat diklik */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Menambah efek bayangan lebih gelap */
+}
+.tiktok{
+	border: none;
+	outline: none;
+	display: block;
+}
+
+.tiktok:hover{
+	transform: scale(1.1); /* Membesarkan ikon */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+	border-radius: 20px;
+}
+.tiktok:active{
+	transform: scale(0.9); /* Mengecilkan ikon saat diklik */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Menambah efek bayangan lebih gelap */
+}
+.instagram:hover{
+	transform: scale(1.1); /* Membesarkan ikon */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+	border-radius: 22px;
+}
+.instagram:active{
+	transform: scale(0.9); /* Mengecilkan ikon saat diklik */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Menambah efek bayangan lebih gelap */
+}
+.body{
+        background: linear-gradient(to bottom right, #667EEA, #FF75B5);
+        height: 100vh; /* Membuat tinggi body sama dengan tinggi viewport */
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        min-height: 100vh;
+}
+.paragraf{
+    text-align: center;
+	font-size: 20px;
+	color: white;
+	overflow: hidden;
+	animation: slide 1s ease-in;
+	margin: 30px;
+}
+@keyframes slide {
+	0% {
+	  transform: translateX(-100%);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+}
+
+.emot{  
+    font-size: 50px;
+    margin: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 115px;	
+	position: relative;
+	animation: memudar 2s ease-in-out 1 forwards , atas-bawah 2s ease-in-out infinite;
+	/* Menggabungkan dua animasi dengan kontrol penuh */
+	/* "1 forwads" berarti berjalan 1 kali */
+}
+
+@keyframes memudar {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes atas-bawah {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.a{
+    text-decoration: none;
+    color: whitesmoke;
+    color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+    line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+	animation: slider 1s ease-in;
+	overflow: hidden;
+    
+}
+@keyframes slider{
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	  }
+	  100% {
+		transform: translateX(0);
+		opacity: 1;
+	  }
+}
+.a span {
+	transition: all 0.3s;
+}
+.a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.a:hover span {
+	letter-spacing: 10px;
+}
+.a::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255,255,255,0.1);
+}
+.a:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+
+
+
+
+/* HOME */ /* HOME */ /* HOME */ /* HOME */ /* HOME */ /* HOME */
+
+.body2{
+	background-image: url("Youtube.png");
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+.h1-2{
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin: 40px;
+	text-shadow: 
+    -1px -1px 0 white, /* Outline bagian kiri atas */
+    1px -1px 0 white,  /* Outline bagian kanan atas */
+    -1px 1px 0 white,  /* Outline bagian kiri bawah */
+    1px 1px 0 white;   /* Outline bagian kanan bawah */
+}
+.paragraf2{
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 30px;
+	margin: -10px;
+	color: white;
+}
+.emoticon2{
+	text-align: center;
+	font-size: 50px;
+	margin: -10px;
+}
+#myvideo{
+	margin: 40px auto;
+	display: none;
+}
+#button{
+	margin: 20px auto;
+	padding: 10px;
+
+	color:white;
+  	font-family:Helvetica, sans-serif;
+  	font-weight:bold;
+  	font-size:36px;
+  	text-align: center;
+  	text-decoration:none;
+  	background-color:#FFA12B;
+  	display:block;
+  	position:relative;
+  	padding:20px 40px;
+  
+  	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  	text-shadow: 0px 1px 0px #000;
+  	filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  	-webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  	-moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  	box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	border-radius: 5px;
+}
+#button:active{
+	top:10px;
+  background-color:#915100;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+#button::after{
+	content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute; /*membuat elemen bisa di atur top, left dll nya*/
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.a2{
+	text-decoration: none;
+	position: absolute; /*membuat elemen bisa di atur top, left dll nya*/
+	top: 240px;
+	left: 300px;
+	color: crimson;
+}
+.paragraf2dua{
+	border: 3px solid;
+	padding: 10px;
+	margin: 20px;
+	cursor:pointer;
+	position:relative; /*memposisikan elemen sesuai dengan alur normal halaman web*/
+	padding:10px 20px;
+	background:white;
+	font-size:28px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	transition:all 1s;
+	&:after,&:before{
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		border :0px solid #fff;
+		transition:all 1s;
+		}
+	&:after{
+		top:-1px;
+		left:-1px;
+		border-top:5px solid black;
+		border-left:5px solid black;
+		}
+	&:before{
+		bottom:-1px;
+		right:-1px;
+		border-bottom:5px solid black;
+		border-right:5px solid black;
+		}
+	&:hover{
+		border-top-right-radius:0px;
+		border-bottom-left-radius:0px;
+		background:rgba(0,0,0,.5);
+		color:white;
+		&:before,&:after{	
+		width:100%;
+		height:100%;
+		border-color:white;	
+		}
+	}	
+}
+	
+
+/* ABOUT ME */ /* ABOUT ME */ /* ABOUT ME */ /* ABOUT ME */ /* ABOUT ME */
+
+.h1-2{
+	position: flex;
+	text-align: center;
+}
+
+.body3{
+	background-image: url(111.png);
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+}
+#button2{
+	margin: 20px auto;
+	padding: 10px;
+	color:white;
+  	font-family:Helvetica, sans-serif;
+  	font-weight:bold;
+  	font-size:36px;
+  	text-align: center;
+  	text-decoration:none;
+  	background-color:red;
+  	display:block;
+  	position:relative;
+  	padding:20px 40px;
+  
+  	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  	text-shadow: 0px 1px 0px #000;
+  	filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  	-webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 red;
+  	-moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 red;
+  	box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 red;
+  
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	border-radius: 5px;
+}
+	
+#button2:active{
+	top:10px;
+  background-color:red;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 red;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 red;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 red;
+}
+#button2::after{
+	content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute; /*membuat elemen bisa di atur top, left dll nya*/
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+#myvideo2{
+	margin: 0 auto;
+	display: none;
+}
+.paragraf3{
+	position: absolute;
+	left: 300px;
+	font-size: 50px;
+	top: 180px;
+}
+.paragraf3tiga{
+	border: 3px solid;
+	padding: 10px;
+	margin: 20px;
+	cursor:pointer;
+	position:relative; /*memposisikan elemen sesuai dengan alur normal halaman web*/
+	padding:10px 20px;
+	background:white;
+	font-size:28px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	transition:all 1s;
+	&:after,&:before{
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		border :0px solid #fff;
+		transition:all 1s;
+		}
+	&:after{
+		top:-1px;
+		left:-1px;
+		border-top:5px solid black;
+		border-left:5px solid black;
+		}
+	&:before{
+		bottom:-1px;
+		right:-1px;
+		border-bottom:5px solid black;
+		border-right:5px solid black;
+		}
+	&:hover{
+		border-top-right-radius:0px;
+		border-bottom-left-radius:0px;
+		background:rgba(0,0,0,.5);
+		color:white;
+		&:before,&:after{	
+		width:100%;
+		height:100%;
+		border-color:white;	
+		}
+	}	
+}
+.a3{
+	text-decoration: none;
+	position: absolute; /*membuat elemen bisa di atur top, left dll nya*/
+	top: 250px;
+	left: 300px;
+	color: crimson;
+}
+
+
+/* CONTACT ME */ /* CONTACT ME */ /* CONTACT ME */ /* CONTACT ME */
+
+.body4{
+	margin: 0;
+	padding: 0;
+}
+.awalan{
+	text-align: center;
+	margin: 100px;
+}
+
+
+
+
+
